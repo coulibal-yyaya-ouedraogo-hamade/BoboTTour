@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    min-height: 70px;
+    background: rgb(36,145,196 );
+    color: white;
+    font-size: large;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo {
+    width: 30%;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+header .container .logo img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+header .container .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+header .container .nav li{
+    list-style: none;
+    margin-right: 20px;
+}
+header .container .nav a:hover,.logo a:hover {
+     color: rgb(165, 42, 42);
+
+}
+header .container .nav a,.logo a{
+    transition: all .5s ease;
+}
+header a i {
+    margin-right: 5px;
+}
+.bani {
+    height: 300Px;
+    margin-top: 70px;
+    color:brown ;
+    text-align: center;
+    font-size:34px;
+    padding: 34px;
+    background: url(triangl.webp);
+   
+ 
+}
+
+#patri {
+    padding: 5Opx;
+    text-align: center;
+    background-color: rgba(220, 245, 237, 0.788);
+}
+#patri h1{
+    font-size: 34px;
+    color: gray;
+    padding-bottom: 40px;
+
+}
+
+#contact{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+form {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    box-shadow: 4px 3px 3px rgba(0,0, 0, 0.5), 0 0 4px rgba(0,0, 0, 0.5);
+    padding: 10px;
+    border-radius: 40px;
+}
+label {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 40px;
+}
+form input[type="submit"]{
+    background: lightblue;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+}
+form input[type="submit"]:hover{
+    background: rgb(14,65,250 );
+    transition: 0.5s;
+}
+form input:focus{
+    background: rgb(212,250,250 );
+    transition: 0.5s;
+}
+.form-control{
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    position: relative;
+}
+form-control label{
+    display: inline-block;
+    margin-bottom: 2px;
+}
+ .form-control select{
+    border: 2px solid var(--color-seond);
+    border-radius: 40px;
+    border-radius: solid;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+}
+ contact .form-control input {
+    border: 2px solid var(--color-seond);
+    border-radius: 40px;
+    display: block;
+    font-family: inherit;
+    font-size: 18px;
+    width: 100%;
+    border-radius: solid;
+    height: 30px;
+    padding-left: 5px;
+    border-radius:40px ;
+    text-align: center;
+    
+}
+
+
+@media screen and (max-width:800px){
+    header .container{
+        display:block;
+    }
+    header .container .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    header .container .nav li{
+        margin-bottom:20px ;
+    }
+    .bani{
+        font-size: medium;
+        padding: 20px;
+    }
+}
+    
+#patri div,art{
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><i>Burkina Faso</i></a>
+                <img  src="welcome.jpg" alt="mon logo">
+            </div>
+            <ul class="nav">
+                <li ><a href="index.html">Accueil</a></li>
+                <li ><a href="patrimoine.html">Patrimone</a></li>
+                <li ><a href="galerie.html">Galerie</a></li>
+                <li ><a href="reservation.html">Reservation</a></li>   
+            </ul>
+        </div>
+    </header>
+    <section class="bani">
+          <h1><u><i>Formulaire De Reservations Pour Un Séjour</i></u></h1>
+    </section>
+    <section id="patri">
+        <h1><center><u><i>Remplissez Ce Formulaire Pour Votre Séjour</i></u></center></h1>
+        
+        </div>
+        <section id="contact">
+            <form action="pseudo">
+                <label for="">Votre Nom</label>
+                <input type="text" id="pseudo">
+                <label for="">Votre Prenoms</label>
+                <input type="text" id="pseudo">
+                <label for="email">Votre email:</label>
+                <input type="email" name="" id=""email>
+                <div class="form-control">
+                    <label for="">Veuillez Faire Le Choix De type De Chambre</label>
+                    
+                    <select >
+                        <option >Climatisée</option><br>
+                        <option >Nom Climatisée</option><br>
+                        
+                        
+                    </select>
+                </div><br>
+                <label for="password">Votre Mot de Passe:</label>
+                <input type="password" name="" id="password">
+                <label for="passwordconfirm">Confirmer Votre Mot de Passe:</label>
+                <input type="password" name="" id="passwordconfirm">
+                <input type="submit" value="S'inscrire">
+    
+            </form>
+        </section> 
+        
+    </section>
+</body>
+</html>
